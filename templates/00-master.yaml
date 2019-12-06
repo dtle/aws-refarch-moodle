@@ -301,6 +301,8 @@ Parameters:
     Type: String
   DatabaseInstanceType:
     AllowedValues:
+      - db.t3.medium
+      - db.r5.large
       - db.r4.large
       - db.r4.xlarge
       - db.r4.2xlarge
