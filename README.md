@@ -1,6 +1,10 @@
 # Hosting Moodle on AWS
 
-### Version 1.0.0
+### Version 1.0.0.1
+
+---
+
+This is a fork from: https://github.com/aws-samples/aws-refarch-moodle
 
 ---
 
