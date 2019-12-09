@@ -627,7 +627,12 @@ Resources:
             /tmp/install_moodle.sh:
               content:  !Sub |
                 #!/bin/bash -xe
-                wget -O /tmp/moodle.tgz https://download.moodle.org/stable34/moodle-3.4.tgz  
+                # Moodle versions (original stable 3.4)
+                # wget -O /tmp/moodle.tgz https://download.moodle.org/stable34/moodle-3.4.tgz
+                # wget -O /tmp/moodle.tgz https://download.moodle.org/stable35/moodle-3.5.tgz
+                # wget -O /tmp/moodle.tgz https://download.moodle.org/stable36/moodle-3.6.tgz
+                # wget -O /tmp/moodle.tgz https://download.moodle.org/stable38/moodle-3.8.tgz
+                wget -O /tmp/moodle.tgz https://download.moodle.org/stable37/moodle-3.7.tgz
                 tar -xvzf /tmp/moodle.tgz --strip-components=1 -C /var/www/moodle/html/
                 mv /tmp/config.php /var/www/moodle/html/config.php
                 chown -R root:apache /var/www/moodle/html
